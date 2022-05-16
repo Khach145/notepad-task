@@ -13,22 +13,6 @@ const Pages = () => {
     const [addingSession, setAddingSession] = useState(false)
 
     const [data, setData] = useState([
-        // {
-        //     name: "Page 1",
-        //     id: "1",
-        // },
-        // {
-        //     name: "Page 2",
-        //     id: "2",
-        // },
-        // {
-        //     name: "Page 3",
-        //     id: "3",
-        // },
-        // {
-        //     name: "Page 4",
-        //     id: "4",
-        // },
     ])
 
     useEffect(() => {

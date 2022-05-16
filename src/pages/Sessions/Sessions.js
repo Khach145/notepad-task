@@ -9,22 +9,6 @@ const Sessions = () => {
     const navigate = useNavigate()
     const [addingSession, setAddingSession] = useState(false)
     const [data, setData] = useState([
-        // {
-        //     name: "Session 1",
-        //     id: "1",
-        // },
-        // {
-        //     name: "Session 2",
-        //     id: "2",
-        // },
-        // {
-        //     name: "Session 3",
-        //     id: "3",
-        // },
-        // {
-        //     name: "Session 4",
-        //     id: "4",
-        // },
     ])
 
     useEffect(() => {
