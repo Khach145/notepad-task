@@ -1,0 +1,219 @@
+.notePad_alert {
+    background-color: #EDE1FA;
+    height: 51px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.notePad_main {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 100px;
+}
+
+.notePad_title {
+    font-family: 'Inter', sans-serif;
+    height: 67px;
+    border-bottom: 1px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #827A8A;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.notePad_alert_text {
+    max-width: 300px;
+    text-align: center;
+    min-width: 180px;
+    width: 50%;
+}
+
+.notePad_alert_X {
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.notePad_alert_X:hover {
+    transform: rotate(180deg);
+}
+
+.closing {
+    height: 0;
+    opacity: 0;
+}
+
+.closing .notePad_alert_X {
+    display: none;
+}
+
+.notePad_content {
+    margin-top: 60px;
+    margin-left: 33px;
+    margin-right: 33px;
+    position: relative;
+}
+
+.notePad_content_select_type {
+    
+    
+}
+
+.notePad_content_select_type_el {
+    cursor: pointer;
+    margin: 5px 0;
+    display: flex;
+    width: fit-content;
+}
+
+
+/* TEXT PART */
+.text_part_textarea {
+    min-height: 200px;
+    height: fit-content;
+    width: calc(100% - 33px);
+    border: 1px solid gray;
+    border-radius: 20px;
+    outline: none;
+    resize: none;
+    padding: 15px;
+    box-sizing: content-box;
+}
+.text_part_button {
+    height: 45px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.text_part_button:active {
+    transform: translateY(2px);
+}
+
+
+/* Todo Part */
+
+/* List Part */
+.list_input_part {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.list_input_part_input {
+    height: 30px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.list_input_part_button {
+    height: 45px;
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+    /* position: absolute; */
+    /* right: 0; */
+    cursor: pointer;
+}
+.list_input_part_button:active {
+    transform: translateY(2px);
+}
+
+.list_input_part_wrapper {
+    box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 19%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dataList_list ul {
+    padding: 10px;
+}
+
+/* Data list Part */
+.dataList_main {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 11px;
+    box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 19%);
+    background-color: #f3f3f3;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.dataList_main:hover {
+    background-color: #dddbdb
+}
+
+.dataList_todo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dataList_todo_content {
+    display: flex;
+    align-items: center;
+}
+
+.dataList_todo_buttons {
+    display: flex;
+}
+
+.dataList_todo_button {
+    margin: 0 15px;
+    padding: 10px;
+    /* border: 1px solid; */
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(66, 66, 66);
+}
+
+.dataList_todo_buttons_done {
+    background-color: rgb(104 255 104);;
+    box-shadow: inset 0px 0px 16px 6px rgba(0,0,0,0.33);
+}
+
+.dataList_todo_buttons_undone {
+    background-color: rgb(249 116 116);
+    box-shadow: inset 0px 0px 16px 6px rgba(0,0,0,0.33);
+}
+
+.dataList_todo_button:hover {
+    color: white;
+    box-shadow: inset 0px 0px 16px 6px rgba(0,0,0,0.43);
+}
+
+.dataList_todo_done {
+    color: green;
+}
+
+.dataList_todo_undone {
+    color: red;
+}

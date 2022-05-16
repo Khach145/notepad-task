@@ -1,0 +1,19 @@
+.session_main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    min-width: 300px;
+    max-width: 434px;
+    /* min-height: 323px; */
+    transform: translate(-50%, -50%);
+    background: #F8F8F8;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0px 10px 19px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+}
+
+.session_title {
+    height: 57px;
+    border-bottom: 1px solid #EDE1FA;
+}
