@@ -1,9 +1,13 @@
 import React from 'react';
 import '../notepad.css'
 
-const DataList = ({allData: {type, content, id, status, createdAt}, statusChange}) => {
+const DataList = ({allData: {type, content, id, status}, statusChange}) => {
 
-    const renderDataLists = (type, content, id, status, createdAt) => {
+    const renderLists = (listText) => {
+        return <li key={listText}>{listText}</li>
+    }
+
+    const renderDataLists = (type, content, id, status) => {
         if(type ==="text"){
             return (
                 <div key={id} className='dataList_text'>{content}</div>
@@ -28,9 +32,6 @@ const DataList = ({allData: {type, content, id, status, createdAt}, statusChange
             )
         }
         if(type ==="list") {
-            const renderLists = (listText) => {
-                return <li key={listText} >{listText}</li>
-            }
             return (
                 <div key={id} className='dataList_list'>
                 <ul>
@@ -43,7 +44,7 @@ const DataList = ({allData: {type, content, id, status, createdAt}, statusChange
 
     return (
         <div className={`dataList_main_${type} dataList_main`}>
-            {renderDataLists(type, content, id, status, createdAt)}
+            {renderDataLists(type, content, id, status)}
         </div>
     )
 }

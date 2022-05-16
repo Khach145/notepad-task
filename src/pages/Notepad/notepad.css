@@ -197,17 +197,17 @@
 
 .dataList_todo_buttons_done {
     background-color: rgb(104 255 104);;
-    box-shadow: inset 0px 0px 16px 6px rgba(0,0,0,0.33);
+    box-shadow:  0px 0px 16px 6px rgba(0,0,0,0.13);
 }
 
 .dataList_todo_buttons_undone {
     background-color: rgb(249 116 116);
-    box-shadow: inset 0px 0px 16px 6px rgba(0,0,0,0.33);
+    box-shadow:  0px 0px 16px 6px rgba(0,0,0,0.13);
 }
 
 .dataList_todo_button:hover {
     color: white;
-    box-shadow: inset 0px 0px 16px 6px rgba(0,0,0,0.43);
+    box-shadow:  0px 0px 16px 6px rgba(0,0,0,0.23);
 }
 
 .dataList_todo_done {

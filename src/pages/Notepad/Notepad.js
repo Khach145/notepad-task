@@ -14,7 +14,6 @@ const Notepad = () => {
     const [showAlert, setShowAlert] = useState(false)
     const [mode, setMode] = useState("")
 
-    console.log(showAlert);
     useEffect(() => {
         NotepadApi.getNotepad(location.pathname.split('/')[4])
         .then((data) => {
@@ -46,8 +45,8 @@ const Notepad = () => {
         setData([...allData])
     }
 
-    const renderData = (allData) => {
-        return <DataList allData={allData} statusChange={statusChange} />
+    const renderData = (allData, i) => {
+        return <DataList key={i} allData={allData} statusChange={statusChange} />
     }
 
     const getValue = (value) => {

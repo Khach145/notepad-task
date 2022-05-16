@@ -9,7 +9,7 @@ export const NotepadApi = {
     async getNotepad(id) {
         const note = await axios.get(`${baseUrl}/get-notepad?pageId=${id}`);
         if(!note.data.length) {
-            const newData = await this.newNotepad({pageId: id, content: []})
+            const newData = await this.newNotepad({pageId: id, content: [], name: "Untitled"})
             return newData.data
         }
         return note.data
