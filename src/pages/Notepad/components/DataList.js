@@ -4,7 +4,7 @@ import '../notepad.css'
 const DataList = ({allData: {type, content, id, status}, statusChange}) => {
 
     const renderLists = (listText) => {
-        return <li key={listText}>{listText}</li>
+        return <li style={{overflowWrap: "break-word"}} key={listText}>{listText}</li>
     }
 
     const renderDataLists = (type, content, id, status) => {

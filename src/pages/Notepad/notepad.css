@@ -63,11 +63,6 @@
     position: relative;
 }
 
-.notePad_content_select_type {
-    
-    
-}
-
 .notePad_content_select_type_el {
     cursor: pointer;
     margin: 5px 0;
@@ -216,4 +211,12 @@
 
 .dataList_todo_undone {
     color: red;
+}
+
+@media screen and (max-width: 441px) {
+    .dataList_todo_buttons {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
 }
